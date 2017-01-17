@@ -18,6 +18,7 @@ class JobsController < ApplicationController
     else
     Job.published.recent
     end
+  end
 
   def new
     @job = Job.new
