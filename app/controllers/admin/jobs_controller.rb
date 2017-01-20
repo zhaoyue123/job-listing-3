@@ -33,7 +33,7 @@ class Admin::JobsController < ApplicationController
     if @job.update(job_params)
       redirect_to admin_jobs_path
     else
-      render :new
+      render :edit
     end
   end
 
